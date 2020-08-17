@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "seminar"
+    }
+  },
+  "defaultProject": "seminar",
+  "cli": {
+    "analytics": false
+  }
 }

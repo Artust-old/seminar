@@ -1,0 +1,24 @@
+<div class="select-bar" fxLayout="row" fxLayoutGap="10px">
+    <button mat-fab routerLink="./table" routerLinkActive="active">
+        <mat-icon>table_view</mat-icon>
+    </button>
+    <button mat-fab routerLink="./event" routerLinkActive="active">
+        <mat-icon>local_activity</mat-icon>
+    </button>
+
+    <mat-divider vertical="true"></mat-divider>
+
+    <button mat-fab>
+        <mat-icon>add_circle</mat-icon>
+    </button>
+    <button mat-fab>
+        <mat-icon>delete</mat-icon>
+    </button>
+    <button mat-fab>
+        <mat-icon>info</mat-icon>
+    </button>
+</div>
+
+<mat-divider></mat-divider>
+
+<router-outlet></router-outlet>
