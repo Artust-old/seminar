@@ -1,0 +1,6 @@
+<h1>Binding by Input/Output!</h1>
+
+<p><strong>Input receive: </strong>{{message}}</p>
+
+<label>Add: <input #newItem></label>
+<button (click)="getItem(newItem.value)">Just do it!</button>

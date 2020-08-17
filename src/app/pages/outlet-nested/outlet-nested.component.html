@@ -8,15 +8,16 @@
 
     <mat-divider vertical="true"></mat-divider>
 
-    <button mat-fab>
+    <button mat-fab *ngIf="selectSetting.add" (click)="selectSetting.add = !selectSetting.add; handleClick();">
         <mat-icon>add_circle</mat-icon>
     </button>
-    <button mat-fab>
+    <button mat-fab *ngIf="selectSetting.delete" (click)="selectSetting.delete = !selectSetting.delete; handleClick();">
         <mat-icon>delete</mat-icon>
     </button>
-    <button mat-fab>
+    <button mat-fab *ngIf="selectSetting.info" (click)="selectSetting.info = !selectSetting.info; handleClick();">
         <mat-icon>info</mat-icon>
     </button>
+
 </div>
 
 <mat-divider></mat-divider>

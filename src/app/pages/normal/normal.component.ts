@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NormalComponent implements OnInit {
 
   public input = 'string';
+  public weight = ['1 kg', '2 kg', 'Lang'];
 
   constructor() { }
 
@@ -16,6 +17,11 @@ export class NormalComponent implements OnInit {
 
   onClear(): void {
     this.input = '';
+  }
+
+  addWeight(e: string): void {
+    this.weight.push(e);
+    console.log(this.weight);
   }
 
 }

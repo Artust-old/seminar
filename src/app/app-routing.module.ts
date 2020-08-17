@@ -21,6 +21,10 @@ const routes: Routes = [
     path: 'outlet-nested',
     loadChildren: () => import('./pages/outlet-nested/outlet-nested.module').then(m => m.OutletNestedModule),
   },
+  {
+    path: 'unsubcribe',
+    loadChildren: () => import('./pages/unsubcribe/unsubcribe.module').then(m => m.UnsubcribeModule),
+  },
 ];
 
 @NgModule({

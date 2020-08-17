@@ -1,3 +1,5 @@
+import { FormsModule } from '@angular/forms';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { OutletNestedComponent } from './outlet-nested.component';
@@ -15,6 +17,11 @@ const routes: Routes = [
     component: OutletNestedComponent,
     children: [
       {
+        path: '',
+        redirectTo: 'table',
+        pathMatch: 'full',
+      },
+      {
         path: 'table',
         component: TableComponent,
       },
@@ -31,10 +38,12 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
+    FormsModule,
 
     MatIconModule,
     MatInputModule,
     MatDividerModule,
+    MatCheckboxModule,
 
     FlexLayoutModule,
   ],

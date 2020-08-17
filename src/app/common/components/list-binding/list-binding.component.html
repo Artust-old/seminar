@@ -1,0 +1,7 @@
+<h1>Two-way binding</h1>
+<ul>
+    <li *ngFor="let item of list">
+        <button (click)="del(item)">-</button>
+        {{item}}
+    </li>
+</ul>

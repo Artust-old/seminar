@@ -1,4 +1,4 @@
-<p>{{'normal works!' | uppercase}}</p>
+<h1>{{'normal works!' | uppercase}}</h1>
 
 <input type="text" [(ngModel)]="input">
 
@@ -8,3 +8,10 @@
 <div>
     <h3>{{ input }}</h3>
 </div>
+
+<app-binding-io [message]="input" (newEventEmit)="addWeight($event)"></app-binding-io>
+
+<app-list-binding [(list)]="weight"></app-list-binding>
+<!-- <ul>
+    <li *ngFor="let item of weight">{{item}}</li>
+</ul> -->
